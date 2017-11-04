@@ -5,16 +5,18 @@
 
 ### node.js example
 ```
-const fetch = require('node-fetch');
-import { accountIdToAlias } from 'lib-client-elt';
+import Elrn from 'lib-clinet-elrn';
 
-const eltNodeUrl = config.eltNodeUrl;        // 'localhost:26876'
-const eltAccountId = config.eltAccountId;    // 'NXT-T32U-S3BT-GSV5-DXNWX'
-const eltChainId = config.eltChainId;        // 2
+const options = {
+    ardor_host: '127.0.0.1',
+    ardor_port: 26876,
+    chain_id: 2,
+}
 
-return accountIdToAlias(fetch, eltNodeUrl, eltAccountId, eltChainId)
-.then(result => console.log(result)) // 'bigfoot'
-.catch(err => assert.equal(true, false));
+const elrnClient = new Elrn(config);
+
+elrnClient.getTime()
+.then(result => console.log(result))
 ```
 
 ### installation/integration tests (development):
