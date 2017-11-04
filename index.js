@@ -1,4 +1,5 @@
 import getTime from './src/getTime.js';
+import accountIdToAlias from './src/accountIdToAlias.js';
 
 export default class Elrn {
     constructor(options) {
@@ -8,9 +9,12 @@ export default class Elrn {
             ardor_port: '000000',
             chain_id: '2'
         };
-        this.options = Object.assign(defaultOptions,options);
+        this.options = Object.call(defaultOptions,options);
     }
     getTime () {
-        return getTime.apply(this.options);
+        return getTime.call(this.options);
+    }
+    accountIdToAlias (accountId) {
+        return accountIdToAlias.call(this.options, accountId);
     }
 };
