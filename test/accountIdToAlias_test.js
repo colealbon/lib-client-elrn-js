@@ -16,9 +16,9 @@ suite('accountIdToAlias', function() {
             assert.equal(true, false)
         });
     });
-    // test('accountIdToAlias returns nothing if no alias found', function() {
-    //     return elrnClient.accountIdToAlias('NXT-000-000-000-000')
-    //     .then(result => assert.equal(result, undefined))
-    //     .catch(err => assert.equal(true, false));
-    // });
+    test('accountIdToAlias returns nothing if no alias found', function() {
+        return elrnClient.accountIdToAlias('NXT-000-000-000-000')
+        .then(result => assert.equal(result, undefined))
+        .catch(err => assert.equal(true, false));
+    });
 });
