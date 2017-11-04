@@ -19,9 +19,6 @@ elrnClient.getTime()
 .then(result => console.log(result))
 ```
 
-### installation/integration tests (development):
-```
-
 ## plagarized from:
 Ardor Client from Jelurida
 https://bitbucket.org/Jelurida/ardor/downloads/
