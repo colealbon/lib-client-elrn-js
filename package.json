@@ -1,0 +1,41 @@
+{
+    "name": "@universal-productions/lib-client-elrn-js",
+    "version": "0.0.2",
+    "description": "javascript library to interact with ardor elrn child chain",
+    "main": "index.js",
+    "scripts": {
+        "test": "./node_modules/mocha/bin/mocha --ui=tdd --inline-diffs --colors --require babel-core/register --require babel-polyfill ./test/*_test.js"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/colealbon/lib-client-elrn-js.git"
+    },
+    "keywords": [
+        "ardor",
+        "elrn"
+    ],
+    "author": "Cole Albon",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/colealbon/lib-client-elrn-js/issues"
+    },
+    "homepage": "https://github.com/colealbon/lib-client-elrn-js#readme",
+    "dependencies": {
+        "@babel/core": "^7.0.0-beta.31",
+        "@babel/preset-env": "^7.0.0-beta.31",
+        "babel-loader": "^8.0.0-beta.0",
+        "babel-preset-env": "^1.6.1",
+        "chai": "^4.1.2",
+        "es6-promise": "^4.1.1",
+        "isomorphic-fetch": "^2.2.1",
+        "webpack": "^3.8.1"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-polyfill": "^6.26.0",
+        "mocha": "^4.0.1"
+    }
+}
