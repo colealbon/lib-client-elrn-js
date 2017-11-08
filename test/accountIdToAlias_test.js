@@ -8,9 +8,9 @@ const elrnClient = new Elrn(config)
 
 suite('accountIdToAlias', function() {
     test('accountIdToAlias returns known alias', function() {
-        let expectedResult = 'bigfoot';
+        let expectedResult = '278471050383301288';
         return elrnClient.accountIdToAlias('NXT-T32U-S3BT-GSV5-DXNWX')
-        .then(result => assert.equal(result, 'bigfoot'))
+        .then(result => assert.equal(result, expectedResult))
         .catch(err => {
             console.log(err);
             assert.equal(true, false)
