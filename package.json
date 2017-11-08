@@ -36,7 +36,6 @@
     "devDependencies": {
         "babel-core": "^6.26.0",
         "babel-polyfill": "^6.26.0",
-        "deep-assign": "^2.0.0",
         "mocha": "^4.0.1"
     }
 }
