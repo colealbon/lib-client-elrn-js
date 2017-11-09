@@ -8,8 +8,7 @@ export default class Elrn {
             getPrivateKey: () => {},
             ardor_host: '127.0.0.1',
             ardor_port: '000000',
-            chain_id: '2',
-            elrn_issuer_account_id: 'NXT-T32U-S3BT-GSV5-DXNWX',
+            chain_id: '2'
         };
         this.options = Object.call(defaultOptions,options);
     }

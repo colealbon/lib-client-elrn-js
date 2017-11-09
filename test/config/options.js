@@ -7,6 +7,4 @@ module.exports = {
     secret_phrase: 'swim book position hollow experience grew jump whisper jealous moral neck passion',
     account_id: 'NXT-T32U-S3BT-GSV5-DXNWX',
     alias: '278471050383301288'
-    //,
-    //elrn_issuer_id
 }
