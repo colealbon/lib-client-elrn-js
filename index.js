@@ -1,5 +1,6 @@
 import getTime from './src/getTime.js';
 import accountIdToAlias from './src/accountIdToAlias.js';
+import accountIdToElrnBalance from './src/accountIdToElrnBalance.js';
 
 export default class Elrn {
     constructor(options) {
@@ -16,5 +17,8 @@ export default class Elrn {
     }
     accountIdToAlias (accountId) {
         return accountIdToAlias.call(this.options, accountId);
+    }
+    accountIdToElrnBalance (accountId) {
+        return accountIdToElrnBalance.call(this.options, accountId);
     }
 };
