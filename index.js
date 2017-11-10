@@ -1,6 +1,18 @@
 import getTime from './src/getTime.js';
 import accountIdToAlias from './src/accountIdToAlias.js';
 import accountIdToElrnBalance from './src/accountIdToElrnBalance.js';
+import accountIdToAvatar from './src/accountIdToAvatar.js';
+import prepareUploadTaggedDataTransaction from './src/prepareUploadTaggedDataTransaction.js';
+import secretPhraseToPublicKey from './src/secretPhraseToPublicKey.js';
+import secretPhraseToAccountId from './src/secretPhraseToAccountId.js';
+
+import accountIdToCatalog from './src/accountIdToCatalog.js';
+import publicKeyToAccountId from './src/publicKeyToAccountId.js';
+import secretPhraseToPrivateKey from './src/secretPhraseToPrivateKey.js';
+import accountIdToTranscript from './src/accountIdToTranscript.js';
+import transactionJSONToSignedTransactionBytes from './src/transactionJSONToSignedTransactionBytes.js';
+import signedTransactionBytesToFullhash from './src/signedTransactionBytesToFullhash.js';
+import prepareSetAccountPropertyTransaction from './src/prepareSetAccountPropertyTransaction.js';
 
 export default class Elrn {
     constructor(options) {
@@ -20,5 +32,38 @@ export default class Elrn {
     }
     accountIdToElrnBalance (accountId) {
         return accountIdToElrnBalance.call(this.options, accountId);
+    }
+    accountIdToAvatar (accountId) {
+        return accountIdToAvatar.call(this.options, accountId);
+    }
+    prepareUploadTaggedDataTransaction (publicKey, data, name) {
+        return prepareUploadTaggedDataTransaction.call(this.options, publicKey, data, name);
+    }
+    secretPhraseToPublicKey (secretPhrase) {
+        return secretPhraseToPublicKey.call(null, secretPhrase);
+    };
+    secretPhraseToAccountId (secretPhrase) {
+        return secretPhraseToAccountId.call(null, secretPhrase);
+    };
+    accountIdToCatalog (accountId) {
+        return accountIdToCatalog.call(this.options, accountId);
+    };
+    publicKeyToAccountId (accountId) {
+        return publicKeyToAccountId.call(null, publicKey);
+    };
+    secretPhraseToPrivateKey (accountId) {
+        return secretPhraseToPrivateKey.call(null, secretPhrase);
+    };
+    accountIdToTranscript (accountId) {
+        return accountIdToTranscript.call(this.options, accountId);
+    };
+    transactionJSONToSignedTransactionBytes (transactionJSON) {
+        return transactionJSONToSignedTransactionBytes.call(this.options, transactionJSON)
+    };
+    signedTransactionBytesToFullhash (transactionBytes) {
+        return transactionJSONToSignedTransactionBytes.call(this.options, transactionBytes)
+    };
+    prepareSetAccountPropertyTransaction (publisherPublicKey, propertyAccountId, propertyKey, propertyValue) {
+        return prepareSetAccountPropertyTransaction.call(this.options, publisherPublicKey, propertyAccountId, propertyKey, propertyValue)
     }
 };
