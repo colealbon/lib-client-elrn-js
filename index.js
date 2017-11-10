@@ -49,7 +49,7 @@ export default class Elrn {
     };
     prepareSetAccountPropertyTransaction (publisherPublicKey, propertyAccountId, propertyKey, propertyValue) {
         return prepareSetAccountPropertyTransaction.call(this.options, publisherPublicKey, propertyAccountId, propertyKey, propertyValue)
-    },
+    };
     transactionBytesToSignedTransactionBytes(unsignedTransactionBytes, secretPhrase){
         return prepareSetAccountPropertyTransaction.call(this.options, unsignedTransactionBytes, secretPhrase)
     }
