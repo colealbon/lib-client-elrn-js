@@ -1,6 +1,6 @@
 const fetch = require('isomorphic-fetch')
 
-export function signedTransactionBytesToFullhash(signedTransactionBytes, prunableAttachmentJSON) {
+export default function signedTransactionBytesToFullhash(signedTransactionBytes, prunableAttachmentJSON) {
 
     if(!this.ardor_host) {return Promise.reject(new Error('called acountIdToAvatar with no ardor_host configured'))}
     if(!this.ardor_port) {return Promise.reject(new Error('called acountIdToAvatar with no ardor_port configured'))}
