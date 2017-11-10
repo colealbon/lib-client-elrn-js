@@ -1,5 +1,5 @@
-import {stringToHexString} from './stringToHexString.js';
-import {signBytes} from './signBytes.js';
+import stringToHexString from './stringToHexString.js';
+import signBytes from './signBytes.js';
 
 export default function transactionBytesToSignedTransactionBytes (unsignedTransactionBytes, secretPhrase) {
     return (!unsignedTransactionBytes) ?
