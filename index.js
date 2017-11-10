@@ -9,7 +9,7 @@ import accountIdToCatalog from './src/accountIdToCatalog.js';
 import publicKeyToAccountId from './src/publicKeyToAccountId.js';
 import secretPhraseToPrivateKey from './src/secretPhraseToPrivateKey.js';
 import accountIdToTranscript from './src/accountIdToTranscript.js';
-import transactionJSONToSignedTransactionBytes from './src/transactionJSONToSignedTransactionBytes.js';
+import transactionBytesToSignedTransactionBytes from './src/transactionBytesToSignedTransactionBytes.js';
 import signedTransactionBytesToFullhash from './src/signedTransactionBytesToFullhash.js';
 import prepareSetAccountPropertyTransaction from './src/prepareSetAccountPropertyTransaction.js';
 
@@ -56,4 +56,4 @@ export {secretPhraseToPublicKey};
 export {secretPhraseToAccountId};
 export {publicKeyToAccountId};
 export {secretPhraseToPrivateKey};
-export {transactionJSONToSignedTransactionBytes};
+export {transactionBytesToSignedTransactionBytes};
