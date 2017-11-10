@@ -44,8 +44,8 @@ export default class Elrn {
     accountIdToTranscript (accountId) {
         return accountIdToTranscript.call(this.options, accountId);
     };
-    signedTransactionBytesToFullhash (transactionBytes) {
-        return transactionJSONToSignedTransactionBytes.call(this.options, transactionBytes)
+    signedTransactionBytesToFullhash (transactionBytes, attachmentJSON) {
+        return transactionJSONToSignedTransactionBytes.call(this.options, transactionBytes, attachmentJSON)
     };
     prepareSetAccountPropertyTransaction (publisherPublicKey, propertyAccountId, propertyKey, propertyValue) {
         return prepareSetAccountPropertyTransaction.call(this.options, publisherPublicKey, propertyAccountId, propertyKey, propertyValue)
