@@ -1,6 +1,6 @@
 {
     "name": "@universal-productions/lib-client-elrn-js",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "description": "javascript library to interact with ardor elrn child chain",
     "main": "index.js",
     "scripts": {

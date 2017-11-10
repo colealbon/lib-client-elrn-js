@@ -1,6 +1,6 @@
-import {hexStringToByteArray} from './hexStringToByteArray.js';
-import {simpleHash} from './simpleHash.js';
-import {byteArrayToHexString} from './byteArrayToHexString.js';
+import hexStringToByteArray from './hexStringToByteArray.js';
+import simpleHash from './simpleHash.js';
+import byteArrayToHexString from './byteArrayToHexString.js';
 
 export default function signBytes (message, secretPhrase) {
     return (!message || !secretPhrase) ?

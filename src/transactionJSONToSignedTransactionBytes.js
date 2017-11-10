@@ -1,4 +1,4 @@
-import {transactionBytesToSignedTransactionBytes} from './transactionBytesToSignedTransactionBytes.js';
+import transactionBytesToSignedTransactionBytes from './transactionBytesToSignedTransactionBytes.js';
 
 export default function transactionJSONToSignedTransactionBytes (unsignedTransactionJSON, secretPhrase) {
     return (!unsignedTransactionJSON) ?
